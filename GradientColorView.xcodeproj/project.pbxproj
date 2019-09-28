@@ -14,6 +14,7 @@
 		7A89EF5A234009FA009686D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A89EF59234009FA009686D1 /* Assets.xcassets */; };
 		7A89EF5D234009FA009686D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A89EF5B234009FA009686D1 /* LaunchScreen.storyboard */; };
 		7A89EF6523400AC2009686D1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A89EF6423400AC2009686D1 /* GradientView.swift */; };
+		7A89EF6723400BA0009686D1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A89EF6623400BA0009686D1 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7A89EF5C234009FA009686D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A89EF5E234009FA009686D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A89EF6423400AC2009686D1 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		7A89EF6623400BA0009686D1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		7A89EF4F234009F9009686D1 /* GradientColorView */ = {
 			isa = PBXGroup;
 			children = (
+				7A89EF6623400BA0009686D1 /* UIViewExtension.swift */,
 				7A89EF50234009F9009686D1 /* AppDelegate.swift */,
 				7A89EF52234009F9009686D1 /* SceneDelegate.swift */,
 				7A89EF54234009F9009686D1 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A89EF6723400BA0009686D1 /* UIViewExtension.swift in Sources */,
 				7A89EF55234009F9009686D1 /* ViewController.swift in Sources */,
 				7A89EF51234009F9009686D1 /* AppDelegate.swift in Sources */,
 				7A89EF6523400AC2009686D1 /* GradientView.swift in Sources */,
