@@ -8,7 +8,10 @@
 * Define how many colors the gradient will have and its orientation.
 * In the Storyboard, select the object and change its class type (Option: Show the identity inspector).
 * Now, in the Show the Attributes inspector option, define the colors and orientation.
+* Update Function updateView()
 
 ### Extension
 * Create an extension of UIView
 * Create the gradient function, which will now belong as a function to all UIView objects
+* Function Update gradient()
+* Function gradientDiagonal() added

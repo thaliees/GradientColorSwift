@@ -10,25 +10,32 @@ import UIKit
 
 @IBDesignable
 class GradienteView: UIView {
-    @IBInspectable var firstColor: UIColor = UIColor.clear{
+    @IBInspectable var firstColor: UIColor = UIColor.clear {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var secondColor: UIColor = UIColor.clear{
+    @IBInspectable var secondColor: UIColor = UIColor.clear {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var thirdColor: UIColor = UIColor.clear{
+    @IBInspectable var thirdColor: UIColor = UIColor.clear {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var isHorizontal:Bool = false {
+    // Orientation: HORIZONTAL, VERTICAL or DIAGONAL
+    @IBInspectable var orientation: String = "HORIZONTAL" {
+        didSet {
+            updateView()
+        }
+    }
+    
+    @IBInspectable var locationLeft: Bool = false {
         didSet {
             updateView()
         }
@@ -44,9 +51,19 @@ class GradienteView: UIView {
         let layer = self.layer as! CAGradientLayer
         layer.colors = [firstColor, secondColor, thirdColor].map{$0.cgColor}
         
-        if self.isHorizontal {
+        if orientation == "VERTICAL" {
             layer.startPoint = CGPoint(x: 0, y: 0)
-            layer.endPoint = CGPoint(x: 1, y: 1)
+            layer.endPoint = CGPoint(x: 1, y: 0)
+        }
+        else if orientation == "DIAGONAL" {
+            if locationLeft {
+                layer.startPoint = CGPoint(x: 1, y: 0)
+                layer.endPoint = CGPoint(x: 0, y: 1)
+            }
+            else {
+                layer.startPoint = CGPoint(x: 0, y: 0)
+                layer.endPoint = CGPoint(x: 1, y: 1)
+            }
         }
     }
 }
